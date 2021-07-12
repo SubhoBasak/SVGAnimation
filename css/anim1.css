@@ -1,0 +1,78 @@
+#wd1,
+#wd2,
+#wd3,
+#wd4,
+#wd5,
+#wd6 {
+  transform-origin: center;
+  transform-box: fill-box;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  opacity: 0;
+}
+#wd1,
+#wd4 {
+  animation-name: fade-up-sm;
+}
+#wd2,
+#wd5 {
+  animation-name: fade-up-md;
+}
+#wd3,
+#wd6 {
+  animation-name: fade-up-lg;
+}
+@keyframes fade-up-sm {
+  0% {
+    transform: translateY(10vh);
+    opacity: 0;
+  }
+  20% {
+    transform: translateY(0vh);
+    opacity: 0.8;
+  }
+  80% {
+    transform: translateY(0.5vh);
+    opacity: 0.9;
+  }
+  100% {
+    transform: translateY(-10vh);
+    opacity: 0;
+  }
+}
+@keyframes fade-up-md {
+  0% {
+    transform: translateY(20vh);
+    opacity: 0;
+  }
+  20% {
+    transform: translateY(0vh);
+    opacity: 0.8;
+  }
+  80% {
+    transform: translateY(1vh);
+    opacity: 0.9;
+  }
+  100% {
+    transform: translateY(-20vh);
+    opacity: 0;
+  }
+}
+@keyframes fade-up-lg {
+  0% {
+    transform: translateY(30vh);
+    opacity: 0;
+  }
+  20% {
+    transform: translateY(0vh);
+    opacity: 0.8;
+  }
+  80% {
+    transform: translateY(1.5vh);
+    opacity: 0.9;
+  }
+  100% {
+    transform: translateY(-30vh);
+    opacity: 0;
+  }
+}
